@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Решение квадратного уравнения</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container justify-content-center align-items-center d-flex height100vh">
+    <div class="row">
+      <form name="sq" action="" class="text-center mb-3">
+        <h1>Решение квадратного уравнения a*x&sup2; + b*x + c = 0.</h1>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="addon1">a</span>
+          <input type="number" class="form-control" name="sq_a" value="1" size="4" aria-describedby="addon1">
+          <span class="input-group-text" id="addon2">b</span>
+          <input type="number" class="form-control" name="sq_b" value="1" size="4" aria-describedby="addon2">
+          <span class="input-group-text" id="addon3">c</span>
+          <input type="number" class="form-control" name="sq_c" value="1" size="4" aria-describedby="addon3">
+        </div>
+        <button type="button" class="btn btn-outline-success fw-bold" onclick="square()">Посчитать</button>
+      </form>
+      <hr class="mb-3 text-dark">
+      <h4>Ответ: <span id="sq_sol">0</span></h4>
+    </div>
+  </div>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/my.js"></script>
+</body>
+</html>
